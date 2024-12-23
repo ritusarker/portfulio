@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+#navber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.Menu{
+    display: flex;
+    padding: 0 auto;
+}
+.Menu li{
+    list-style: none;
+}
+.Menu li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+}
+.Menu li:hover a{
+    color: red;
+}
+.icon{
+    color: coral;
+}
+.detileCon{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.Detiles{
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+.Detiles p{
+    font-size: 35px;
+    font-weight: bold;
+        
+}
+.Detiles img{
+    height: 500px;
+    transition: 0.5s;
+    margin-left: 150px;
+}
+.Detiles img:hover{
+    transform: translateX(-150px);
+}
+
+
+.sss{
+    font-size: 20px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(40, 77, 32);
+    color: aliceblue;
+}
+.sss:hover{
+    background-color: rgb(7, 6, 6);
+    font-weight: 20px;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+.ccc{
+    font-size: 30px;
+}
+.mainContainer{
+    margin: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+/* navbar responsive */
+
+/* About section */
+.aboutContainer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.about{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 100px;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    
+}
+.about h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.about p{
+    font-size: 20px;
+    text-align: justify;
+    
+}
+.about img{
+    width: 500px;
+    border: 2px solid coral;
+    padding: 5px;
+    border-radius: 500px 0 500px 0;
+    transition: 2s all ease;
+}
+.about:hover img{
+        border-radius: 0 500px 0 500px;
+}
+.about button{
+         border: none;
+         background-color: coral;
+         color: bisque;
+         padding: 10px 20px;
+         margin-top: 10px;
+         border-radius: 10px;
+         cursor: pointer;
+}
+.about button:hover{
+    background-color: aqua;
+    color: brown;
+}
+/* About section end */
+/* about section responsive */
+@media screen and (max-width:480px){
+    .about{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and(min-width:481px) and (max-width:768px) {
+    .about{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:769) {
+    .about{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* services section */
+.mySer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.servicesContainer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.ServicesCard{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.ServicesCard:hover{
+      transform: translateY(-10px);
+}
+.ServicesCard i{
+    font-size: 50px;
+    color: coral;
+}
+.ServicesCard h2{
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.ServicesCard p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.ServicesCard button{
+    background-color: coral;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.ServicesCard button:hover{
+    background-color: black;
+    color: antiquewhite;
+} 
+/* services section end*/
+
+/* services section responsive */
+@media screen and (max-width:480px){
+    .servicesContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and(min-width:481px) and (max-width:768px) {
+    .servicesContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:769) {
+    .servicesContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* services section responsive end*/
+
+/* My Project */
+.ProjectWrapper{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.Project{
+text-align: center;
+text-transform: uppercase;
+font-size: 38px;
+padding: 20px 20px;
+
+}
+.ProjectWrapper img{
+    width: 300px;
+}
+.ProjectWrapper:hover{
+    transform: translateY(-10px);
+}
+.ProjectWrapper img:hover{
+    transform: scale(1.2);
+}
+.ProjectWrapper h3{
+    margin-bottom: 25px;
+    font-weight: bolder;
+    font-size: 40px;
+} 
+.ProjectWrapper p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ProjectWrapper button{
+    background-color: coral;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.ProjectWrapper button:hover{
+    background-color: black;
+    color: antiquewhite;
+}
+.ProjectWrapper span{
+    background-color: rgb(247, 205, 176);
+    color: chocolate;
+    font-size: 20px;
+    
+}
+.ProjectContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+}
+/* My Project end*/
+
+/* my project responsive */
+@media screen and (max-width:480px){
+    .ProjectContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and(min-width:481px) and (max-width:768px) {
+    .ProjectContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:769) {
+    .ProjectContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* my project responsive end */
+
+/* client feedback section */
+.feedbackContainer{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+.feedbackWrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
+}
+.Feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 0 20px 50px 20px; 
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 50px;
+}
+.Feedback:hover{
+    transform: translateY(-10px);
+}
+.Feedback img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 5px solid coral;
+    margin-top: -20px;
+
+}
+
+.Feedback p{
+    margin: 10px 0;
+    font-style: italic;
+    color: dimgrey;
+}
+.feedbackRating{
+    margin: 10px 0;
+    color: coral;
+}
+.feedbackTitel{
+    color: coral !important;
+}
+/* client feedback section end */
+/* client feedback responsive section */ 
+@media screen and (max-width:480px){
+    .feedbackWrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and(min-width:481px) and (max-width:768px) {
+    .feedbackWrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:769) {
+    .feedbackWrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* client feedback responsive section end */ 
+
+/* contact information section */
+.ProjectHeading{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.contactInformation h2{
+    padding: 10px;
+    font-size: 30px;
+}
+.contactInformation p{
+    color: gray;
+
+}
+.contactContainer{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.ContactWrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    padding: 50px 20px;
+}
+
+.contactInfo{
+    display: flex;
+    align-items: center;
+}
+.contactInfo i{
+      font-size: 25px;
+      color: coral;
+}
+.contactInfo h2{
+    font-size: 25px;
+}
+.contactInfo h4{
+    color: gray;
+}
+.contactSocial i{
+    font-size: 30px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    margin-top: 20px;
+}
+.contactSocial i:hover{
+    background-color: coral;
+    cursor: pointer;
+}
+.contactFrom input{
+    width: 90%;
+    padding: 15px;
+    margin: 5px; 
+    border-radius: 10px;
+}
+
+.contactFrom textarea{
+    width: 90%;
+    padding: 15px;
+    margin: 10px;
+    height: 100px;
+    border-radius: 10px;
+} 
+.contacSub{
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+} 
+.contacSub:hover{
+    background-color: coral;
+}
+
+
+/* contact information section end */
+
+/* contact information section  responsive */
+@media screen and (max-width:480px){
+    .contactInformation{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and(min-width:481px) and (max-width:768px) {
+    .contactInformation{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:769) {
+    .contactInformation{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* contact information section  responsive end */
+
+
+/* footer container */
+.footerFullContainer{
+background-color: black;
+padding: 50px;
+margin-top: 100px;
+}
+
+.footerWrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footerContain h2{
+    color: aliceblue;
+}
+.footerContain p{
+    color: bisque;
+    margin: 20px 0;
+}
+.footerContactSocial i{
+    font-size: 30px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    margin: 10px 5px; 
+    cursor: pointer;
+}
+.footerContactSocial i:hover{
+    color: coral;
+}
+.quickLinks{
+padding: 20px;
+}
+.quickLinks h2{
+    color: chocolate;
+    margin-bottom: 30px;
+}
+.quickLinks li{
+    color: aliceblue;
+    list-style: none;
+    margin-top: 15px;
+    cursor: pointer;
+}  
+.quickLinks li:hover{
+    color: coral;
+}
+.quickLinks ul li:hover{
+    color: coral;
+}
+.footerContactInfo{
+    padding: 20px;
+}
+.footerContactInfo h2{
+     color: chocolate;
+}
+.footerContactInfo i{
+    color: coral;
+    display: flex;
+}
+.footerContactInfo p{
+    color: white;
+}
+.footerContainerInfo{
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+}
+/* footer container end */
+/* footer container responsive */
+@media screen and (max-width:480px){
+    .footerWrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and(min-width:481px) and (max-width:768px) {
+    .footerWrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:769) {
+    .footerWrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* footer container responsive end */
+
+/* foot section */
+.footWrapper{
+background-color: darkslategray;
+color: aliceblue;
+padding: 17px;
+text-align: center;
+}
+
